@@ -30,7 +30,7 @@ public class AppOrderTestPositive {
     }
 
     @Test
-    public void ShouldSubmitFormCorrectly() {
+    public void shouldSubmitFormCorrectly() {
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Иван Иванов");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79093548598");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
@@ -42,7 +42,7 @@ public class AppOrderTestPositive {
     }
 
     @Test
-    public void ShouldSubmitFormCorrectlyIfUseYo() {
+    public void shouldSubmitFormCorrectlyIfUseYo() {
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Фёдор Иванов");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79093548598");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();

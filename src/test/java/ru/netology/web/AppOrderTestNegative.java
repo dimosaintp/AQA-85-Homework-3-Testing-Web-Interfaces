@@ -38,7 +38,7 @@ public class AppOrderTestNegative {
     }
 
     @Test
-    public void ShouldCollapseWhenEnteringNameEmpty() {
+    public void shouldCollapseWhenEnteringNameEmpty() {
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79093548598");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
         driver.findElement(By.cssSelector("button.button")).click();
@@ -48,7 +48,7 @@ public class AppOrderTestNegative {
     }
 
     @Test
-    public void ShouldCollapseWhenEnteringNameLatin() {
+    public void shouldCollapseWhenEnteringNameLatin() {
         driver.findElement(By.xpath("//span[@data-test-id='name']//input")).sendKeys("Ivan");
         driver.findElement(By.xpath("//span[@data-test-id='phone']//input")).sendKeys("+79093548598");
         driver.findElement(By.xpath("//label[@data-test-id='agreement']")).click();
@@ -59,7 +59,7 @@ public class AppOrderTestNegative {
     }
 
     @Test
-    public void ShouldCollapseWhenEnteringNameNumbers() {
+    public void shouldCollapseWhenEnteringNameNumbers() {
         driver.findElement(By.xpath("//span[@data-test-id='name']//input")).sendKeys("1234567890");
         driver.findElement(By.xpath("//span[@data-test-id='phone']//input")).sendKeys("+79093548598");
         driver.findElement(By.xpath("//label[@data-test-id='agreement']")).click();
@@ -70,7 +70,7 @@ public class AppOrderTestNegative {
     }
 
     @Test
-    public void ShouldCollapseWhenEnteringPhoneEmpty() {
+    public void shouldCollapseWhenEnteringPhoneEmpty() {
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Иван Иванов");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
         driver.findElement(By.cssSelector("button.button")).click();
@@ -80,7 +80,7 @@ public class AppOrderTestNegative {
     }
 
     @Test
-    public void ShouldCollapseWhenEnteringPhoneLatin() {
+    public void shouldCollapseWhenEnteringPhoneLatin() {
         driver.findElement(By.xpath("//span[@data-test-id='name']//input")).sendKeys("Иван Иванов");
         driver.findElement(By.xpath("//span[@data-test-id='phone']//input")).sendKeys("ivanivanov");
         driver.findElement(By.xpath("//label[@data-test-id='agreement']")).click();
@@ -91,7 +91,7 @@ public class AppOrderTestNegative {
     }
 
     @Test
-    public void ShouldCollapseWhenEnteringPhoneMoreLimit() {
+    public void shouldCollapseWhenEnteringPhoneMoreLimit() {
         driver.findElement(By.xpath("//span[@data-test-id='name']//input")).sendKeys("Иван Иванов");
         driver.findElement(By.xpath("//span[@data-test-id='phone']//input")).sendKeys("+790991135866");
         driver.findElement(By.xpath("//label[@data-test-id='agreement']")).click();
@@ -102,7 +102,7 @@ public class AppOrderTestNegative {
     }
 
     @Test
-    public void ShouldCollapseWhenCheckboxUnchecked() {
+    public void shouldCollapseWhenCheckboxUnchecked() {
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Иван Иванов");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79093999980");
         driver.findElement(By.cssSelector("button.button")).click();
